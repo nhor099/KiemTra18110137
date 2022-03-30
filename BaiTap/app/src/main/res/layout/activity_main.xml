@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="CÔNG CỤ TÍNH LÃI TIỀN GỬI"
+            android:textColor="#4C469C"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số tiền gửi *" />
+
+        <EditText
+            android:hint="đ"
+            android:id="@+id/soTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#483FA8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lãi suất gửi *" />
+
+        <EditText
+            android:hint="%/Năm"
+            android:id="@+id/laiSuat"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:textColor="#483FA8"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kỳ hạn gửi *" />
+
+        <EditText
+            android:id="@+id/kiHan"
+            android:hint="Tháng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#483FA8" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#704DDC"
+            android:onClick="xemKetQuaClick"
+            android:text="Xem kết quả" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
